@@ -1,7 +1,5 @@
-# Java JDK 8 and Fx8 with Proguard Obfuscation
+# Java JDK 8 and Fx8 with Maven and Proguard Obfuscation
 
-
-## Non Modular - Maven
 
 `obfuscation-jdk8-proguard` sample modular project to run with Maven
 
