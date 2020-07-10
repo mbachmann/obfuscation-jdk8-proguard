@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<fx:root type="BorderPane" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml">
+  <bottom>
+    <HBox spacing="10.0">
+      <children>
+        <Label text="Status:" />
+        <Label fx:id="lblStatus" />
+      </children>
+      <BorderPane.margin>
+        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </BorderPane.margin>
+    </HBox>
+  </bottom>
+  <center>
+    <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="5.0">
+      <children>
+        <Label text="Message:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <TextField fx:id="txtInput" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button fx:id="btnEcrypt" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" text="Encrypt" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+        <TextField fx:id="txtEncrypted" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label text="Encrypted:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+        <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </center>
+  <top>
+    <ToolBar>
+      <items>
+        <Button mnemonicParsing="false" text="Menu 1" />
+        <Button mnemonicParsing="false" text="Menu 2" />
+      </items>
+    </ToolBar>
+  </top>
+</fx:root>
